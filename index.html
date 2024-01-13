@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Feast Heaven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" class="cart-icon">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="left-image">
+            <img src="hero.png" alt="">
+        </div>
+        <div class="right-text">
+            <h1>FEAST HEAVEN</h1>
+            <h2>Authentic Indian Cuisine</h2>
+            <a href="#menu">Order Now</a>
+        </div>
+    </section>
+    <div class="cartTab" id="cartDisplay">
+        <h1>Cart Items</h1>
+        <div class="listCart" id="cartItems"></div>
+        <div class="btn">
+            <button class="close">Close</button>
+            <button class="checkout">Check Out</button>
+        </div>
+    </div>
+    <section class="menu" id="menu">
+        <div class="title">Our Menu</div>
+        <div class="subtitle">Starters</div>
+        <div class="featured_products">
+            <div class="product_card" id="frenchFries">
+                <img src="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800"
+                    alt="French Fries">
+                <h3>French Fries</h3>
+                <p>French fries, chips, finger chips, french-fried potatoes, or simply fries of disputed origin from
+                    Belgium or France.</p>
+                <p class="price"><strong>$2.99</strong></p>
+                <button class="add-to-cart-btn" data-name="French Fries" data-price="$2.99"
+                    data-image="https://static.toiimg.com/thumb/54659021.cms?imgsize=275086&width=800&height=800">Add to
+                    Cart</button>
+            </div>
+            <div class="product_card" id="burger">
+                <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+                    alt="Burger">
+                <h3>Burger</h3>
+                <p>A veggie burger is a hamburger made with a patty that does not contain meat, or the patty of such a
+                    hamburger.</p>
+                <p class="price"><strong>$1.99</strong></p>
+                <button class="add-to-cart-btn" data-name="Burger" data-price="$1.99"
+                    data-image="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg">Add
+                    to Cart</button>
+            </div>
+            <div class="product_card" id="manchurian">
+                <img src="https://www.myplantifulcooking.com/wp-content/uploads/2022/01/cabbage-manchurian-featured.jpg"
+                    alt="Manchurian">
+                <h3>Manchurian</h3>
+                <p>Manchurian is a class of Indian Chinese dish made by roughly chopping and deep-frying ingredients
+                    such as cauliflower,paneer, etc.</p>
+                <p class="price"><strong>$4.99</strong></p>
+                <button class="add-to-cart-btn" data-name="Manchurian" data-price="$4.99"
+                    data-image="https://www.myplantifulcooking.com/wp-content/uploads/2022/01/cabbage-manchurian-featured.jpg">Add
+                    to Cart</button>
+            </div>
+        </div>
+    </section>
+    <div class="subtitle">Main Course</div>
+    <div class="featured_products">
+        <div class="product_card" id="butterPaneer">
+            <img src="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg"
+                alt="Butter Paneer">
+            <h3>Butter Paneer</h3>
+            <p>This creamy curry is made with onion, tomatoes, cashews, cream and butter. It has a mild sweet taste and
+                pairs beautifully with garlic naan or jeera rice.</p>
+            <p class="price"><strong>$2.99</strong></p>
+            <button class="add-to-cart-btn" data-name="Butter Paneer" data-price="$2.99"
+                data-image="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2-500x500.jpg">Add
+                to Cart</button>
+        </div>
+        <div class="product_card" id="kadhaiChicken">
+            <img src="https://mazayafoods.co.in/wp-content/uploads/2019/10/Chicken-karahi-768x768.jpg"
+                alt="Kadhai Chicken">
+            <h3>Kadhai Chicken</h3>
+            <p>Kadai chicken is a simple, spicy dish and is traditionally made in a cast iron wok, but you can use a
+                dutch oven or large saute pan instead.</p>
+            <p class="price"><strong>$1.99</strong></p>
+            <button class="add-to-cart-btn" data-name="Kadhai Chicken" data-price="$1.99"
+                data-image="https://mazayafoods.co.in/wp-content/uploads/2019/10/Chicken-karahi-768x768.jpg">Add
+                to Cart</button>
+        </div>
+        <div class="product_card" id="malaiKofta">
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/malai-kofta-2-500x500.jpg"
+                alt="Malai Kofta">
+            <h3>Malai Kofta</h3>
+            <p>Malai Kofta is a delicious dish of fried balls of potato and paneer in a rich and creamy mild gravy made
+                with sweet onions and tomatoes.</p>
+            <p class="price"><strong>$4.99</strong></p>
+            <button class="add-to-cart-btn" data-name="Malai Kofta" data-price="$4.99"
+                data-image="https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/malai-kofta-2-500x500.jpg">Add
+                to Cart</button>
+        </div>
+    </div>
+    <div class="subtitle">Desserts</div>
+    <div class="featured_products">
+        <div class="product_card" id="iceCream">
+            <img src="https://joyfoodsunshine.com/wp-content/uploads/2020/06/homemade-chocolate-ice-cream-recipe-7.jpg"
+                alt="Ice Cream">
+            <h3>Ice Cream</h3>
+            <p>Ice cream is a frozen dessert typically made from milk or cream that has been flavoured with a sweetener,
+                either sugar or an alternative, and a spice, such as cocoa or vanilla, </p>
+            <p class="price"><strong>$2.99</strong></p>
+            <button class="add-to-cart-btn" data-name="Ice Cream" data-price="$2.99"
+                data-image="https://joyfoodsunshine.com/wp-content/uploads/2020/06/homemade-chocolate-ice-cream-recipe-7.jpg">Add
+                to Cart</button>
+        </div>
+        <div class="product_card" id="gulabJamun">
+            <img src="https://static.toiimg.com/thumb/63799510.cms?imgsize=1091643&width=800&height=800"
+                alt="Gulab Jamun">
+            <h3>Gulab Jamun</h3>
+            <p>It is made mainly from milk solids. It is often garnished with dried nuts such as almonds and cashews to
+                enhance flavour.</p>
+            <p class="price"><strong>$1.99</strong></p>
+            <button class="add-to-cart-btn" data-name="Gulab Jamun" data-price="$1.99"
+                data-image="https://static.toiimg.com/thumb/63799510.cms?imgsize=1091643&width=800&height=800">Add to
+                Cart</button>
+        </div>
+        <div class="product_card" id="jalebi">
+            <img src="https://static.toiimg.com/thumb/53099699.cms?width=1200&height=900" alt="Jalebi">
+            <h3>Jalebi</h3>
+            <p>Jalebi is a popular sweet snack in South Asia.It is made by deep-frying maida flour batter in pretzel or
+                circular shapes, which are then soaked in sugar syrup</p>
+            <p class="price"><strong>$4.99</strong></p>
+            <button class="add-to-cart-btn" data-name="Jalebi" data-price="$4.99"
+                data-image="https://static.toiimg.com/thumb/53099699.cms?width=1200&height=900">Add to Cart</button>
+        </div>
+
+    </div>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Feast Heaven, where passion for food meets a commitment to exceptional service. Since
+                        our humble beginnings in 1872, we've been on a mission to redefine dining experiences.</p>
+
+                    <p>Our story started when Tillu Singh, a visionary food enthusiast, embarked on a culinary journey
+                        to bring together flavors from around the world. Over the years, Feast Heaven has evolved into a
+                        beacon of culinary excellence, renowned for its innovative dishes and warm hospitality.</p>
+
+                    <p>At Feast Heaven, our talented team of chefs, led by Executive Chef Chota Bheem, brings a wealth
+                        of expertise and creativity to the kitchen. Each dish is a masterpiece, meticulously crafted
+                        with locally sourced, seasonal ingredients to tantalize your taste buds.</p>
+
+                    <p>As we continue to grow, our commitment remains unchanged - to provide an unforgettable dining
+                        experience that delights our guests and celebrates the artistry of food.</p>
+                </div>
+                <div class="about-images">
+                    <img src="https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
+                        alt="Restaurant Interior">
+                    <img src="https://images.livemint.com/img/2022/04/04/1200x900/Chef_Ananda_Solomon_1649042873808_1649042881426.jpg"
+                        alt="Executive Chef">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <p><strong>Address:</strong> 1812, Dholakpur, India</p>
+                    <p><strong>Phone:</strong> +91 1234567890</p>
+                    <p><strong>Email:</strong> contactus@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
